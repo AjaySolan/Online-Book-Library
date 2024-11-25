@@ -1,0 +1,151 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0066cc;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar-brand h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+  color: #ffd700;
+}
+
+/* Home Page Styling */
+.home-container {
+  padding: 20px;
+}
+
+.welcome-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.categories-section,
+.popular-books-section {
+  margin-bottom: 20px;
+}
+
+.category-list {
+  display: flex;
+  gap: 30px;
+}
+
+.category-list a {
+  background: #0066cc;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.category-list a:hover {
+  background: #004b99;
+}
+
+.popular-books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.book-card {
+  background: white;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* .book-card img {
+  width: 100%;
+} */
+
+/* Browse Page */
+.browse-container {
+  padding: 20px;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Book Details Page */
+.book-details-container {
+  padding: 20px;
+}
+
+.book-details-container .back-button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Add Book Page */
+.add-book-container {
+  padding: 20px;
+}
+
+.add-book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-book-form input,
+.add-book-form textarea,
+.add-book-form button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* 404 Page */
+.not-found-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.not-found-container .home-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
